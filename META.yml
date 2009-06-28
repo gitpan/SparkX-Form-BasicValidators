@@ -1,0 +1,29 @@
+---
+name: SparkX-Form-BasicValidators
+version: 0.01
+author:
+  - 'James Laver <printf(qw[%s@%s.%s cpan jameslaver com])>'
+abstract: A selection of validators to make writing custom fields easier.
+license: perl
+resources:
+  license: ~
+build_requires:
+  Test::More: 0
+provides:
+  SparkX::Form::BasicValidators:
+    file: lib/SparkX/Form/BasicValidators.pm
+    version: 0.01
+  SparkX::Form::Field::Validator::Confirm:
+    file: lib/SparkX/Form/Field/Validator/Confirm.pm
+  SparkX::Form::Field::Validator::MaxLength:
+    file: lib/SparkX/Form/Field/Validator/MaxLength.pm
+  SparkX::Form::Field::Validator::MinLength:
+    file: lib/SparkX/Form/Field/Validator/MinLength.pm
+  SparkX::Form::Field::Validator::NotEmpty:
+    file: lib/SparkX/Form/Field/Validator/NotEmpty.pm
+  SparkX::Form::Field::Validator::Regex:
+    file: lib/SparkX/Form/Field/Validator/Regex.pm
+generated_by: Module::Build version 0.32
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
